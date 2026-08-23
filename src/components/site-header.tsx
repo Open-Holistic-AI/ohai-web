@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { LogoMark } from "@/components/logo";
 
@@ -169,6 +169,28 @@ export function SiteHeader() {
 	const [active, setActive] = useState<string | null>(null);
 	const [drawerOpen, setDrawerOpen] = useState(false);
 	const [openSection, setOpenSection] = useState<string | null>(null);
+	const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+	const cancelClose = () => {
+		if (closeTimer.current) {
+			clearTimeout(closeTimer.current);
+			closeTimer.current = null;
+		}
+	};
+	const openMenu = (key: string) => {
+		cancelClose();
+		setActive(key);
+	};
+	// Delay closing so the cursor has time to travel from the trigger into
+	// the panel without the menu snapping shut.
+	const scheduleClose = () => {
+		cancelClose();
+		closeTimer.current = setTimeout(() => setActive(null), 220);
+	};
+	const closeNow = () => {
+		cancelClose();
+		setActive(null);
+	};
 
 	useEffect(() => {
 		const onScroll = () => setStuck(window.scrollY > 20);
@@ -176,6 +198,8 @@ export function SiteHeader() {
 		window.addEventListener("scroll", onScroll, { passive: true });
 		return () => window.removeEventListener("scroll", onScroll);
 	}, []);
+
+	useEffect(() => () => cancelClose(), []);
 
 	useEffect(() => {
 		if (!drawerOpen) return;
@@ -192,14 +216,11 @@ export function SiteHeader() {
 		<header className={`site-header${stuck ? " is-stuck" : ""}`}>
 			<div
 				className="site-header__inner"
-				onMouseLeave={() => setActive(null)}
+				onMouseLeave={scheduleClose}
+				onMouseEnter={cancelClose}
 			>
 				<div className="site-header__pill">
-					<Link
-						className="brand"
-						href="/"
-						onClick={() => setActive(null)}
-					>
+					<Link className="brand" href="/" onClick={closeNow}>
 						<LogoMark className="brand__mark" />
 						<span className="brand__name">
 							Open&nbsp;Holistic&nbsp;AI<i>Sovereign&nbsp;AI</i>
@@ -208,15 +229,12 @@ export function SiteHeader() {
 
 					<nav className="mega-nav" aria-label="Main">
 						{MENUS.map((m) => (
-							<div
-								key={m.key}
-								onMouseEnter={() => setActive(m.key)}
-							>
+							<div key={m.key} onMouseEnter={() => openMenu(m.key)}>
 								<button
 									type="button"
 									className={`mega-nav__trigger${active === m.key ? " is-active" : ""}`}
 									aria-expanded={active === m.key}
-									onClick={() => setActive(active === m.key ? null : m.key)}
+									onClick={() => (active === m.key ? closeNow() : openMenu(m.key))}
 								>
 									{m.label}
 									<Chevron />
@@ -244,7 +262,11 @@ export function SiteHeader() {
 				</div>
 
 				{/* desktop dropdown */}
-				<div className={`mega-dropdown${activeMenu ? " is-open" : ""}`}>
+				<div
+					className={`mega-dropdown${activeMenu ? " is-open" : ""}`}
+					onMouseEnter={cancelClose}
+					onMouseLeave={scheduleClose}
+				>
 					{activeMenu && (
 						<div className="mega-dropdown__grid">
 							<div className="mega-lead">
@@ -253,7 +275,7 @@ export function SiteHeader() {
 								</span>
 								<h4>{activeMenu.lead.title}</h4>
 								<p>{activeMenu.lead.desc}</p>
-								<Link href={activeMenu.href} onClick={() => setActive(null)}>
+								<Link href={activeMenu.href} onClick={closeNow}>
 									Explore {activeMenu.label} <ArrowMini />
 								</Link>
 							</div>
@@ -263,7 +285,7 @@ export function SiteHeader() {
 										key={it.href}
 										href={it.href}
 										className="mega-item"
-										onClick={() => setActive(null)}
+										onClick={closeNow}
 									>
 										<span className="mega-item__title">
 											<Dot />

@@ -87,6 +87,16 @@
   transition: opacity .2s ease, transform .2s ease;
 }
 .mega-dropdown.is-open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+/* invisible bridge across the gap to the pill, so moving the cursor down
+   into the panel doesn't pass through a dead (un-hovered) zone */
+.mega-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  height: 18px;
+}
 
 .mega-dropdown__grid {
   display: grid;
