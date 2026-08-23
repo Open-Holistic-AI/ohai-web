@@ -79,13 +79,13 @@ const MENUS: Menu[] = [
 		],
 	},
 	{
-		key: "products",
-		label: "Products",
+		key: "healthcare",
+		label: "Healthcare",
 		href: "/healthcare",
 		lead: {
-			kicker: "Our own models",
-			title: "OHM & the OHAI Platform",
-			desc: "Built in-house, run on your infrastructure.",
+			kicker: "Healthcare · OHM",
+			title: "Doctors treat, not type",
+			desc: "Our clinical AI platform — built in-house, run on your hospital's infrastructure.",
 		},
 		items: [
 			{
