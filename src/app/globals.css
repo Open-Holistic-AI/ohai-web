@@ -381,7 +381,7 @@ em {
   padding: 40px 38px;
   background:
     linear-gradient(to bottom, rgba(8,14,24,.74) 0%, rgba(8,14,24,.44) 34%, rgba(8,14,24,.2) 62%, rgba(8,14,24,.34) 100%),
-    url("/media/card-research.jpg") center 55% / cover no-repeat;
+    url("/media/ohai-workspace.jpg") center 50% / cover no-repeat;
 }
 
 .card__title {
@@ -567,6 +567,56 @@ em {
   gap: 14px 16px;
 }
 
+/* real logo strip */
+.partners__logos {
+  position: relative;
+  z-index: 1;
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+}
+.plogo {
+  margin: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 24px 16px;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 2px 12px rgba(16,16,16,.05);
+  transition: transform .2s ease, box-shadow .22s ease, border-color .2s ease;
+}
+.plogo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(16,16,16,.12);
+  border-color: rgba(30,110,126,.3);
+}
+.plogo img {
+  height: 54px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+}
+.plogo figcaption {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11.5px;
+  letter-spacing: .02em;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .plogo { min-width: 128px; padding: 16px 18px 12px; flex: 1 1 40%; }
+  .plogo img { height: 44px; }
+}
+
 .logo-chip {
   display: inline-flex;
   align-items: center;
@@ -617,9 +667,9 @@ em {
 }
 .legal__bar .shell { display: flex; align-items: center; justify-content: space-between; width: min(100% - 48px, var(--shell)); }
 
+.legalpage { padding-top: 130px; }
 .legal__body {
-  flex: 1;
-  padding: 56px 0 90px;
+  padding: 0 0 90px;
   max-width: 820px;
 }
 .legal__title {

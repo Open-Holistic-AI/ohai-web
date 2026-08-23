@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
+import { RevealObserver } from "@/components/reveal-observer";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
+
 import "./globals.css";
+import "./site.css";
 
 const SITE_URL = "https://openholisticai.in";
 
@@ -21,7 +26,7 @@ export const metadata: Metadata = {
 		"ambient documentation",
 		"OHM",
 		"Nalam AI",
-		"Malar AI",
+		"on-prem AI for colleges",
 		"IIT Madras",
 		"Intel",
 		"on-prem AI",
@@ -87,7 +92,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
 				/>
-				{children}
+				<SiteHeader />
+				<main>{children}</main>
+				<SiteFooter />
+				<RevealObserver />
 			</body>
 		</html>
 	);

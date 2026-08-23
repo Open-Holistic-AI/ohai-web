@@ -1,5 +1,5 @@
-import { OhaiLanding } from "@/components/ohai-landing";
+import { Home } from "@/components/home";
 
 export default function HomePage() {
-	return <OhaiLanding />;
+	return <Home />;
 }
