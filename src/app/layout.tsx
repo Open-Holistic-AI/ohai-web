@@ -41,19 +41,16 @@ export const metadata: Metadata = {
 		follow: true,
 		googleBot: { index: true, follow: true, "max-image-preview": "large" },
 	},
+	// og:title / og:description are intentionally omitted here so each page's
+	// own title + description flow through to Open Graph and Twitter.
 	openGraph: {
 		siteName: "Open Holistic AI",
 		type: "website",
+		locale: "en_IN",
 		url: SITE_URL,
-		title: "Open Holistic AI — Sovereign AI for governments, hospitals & education",
-		description:
-			"India's own AI, built by us and run on your infrastructure. Already live across the Government of Tamil Nadu. Backed by IIT Madras and Intel.",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Open Holistic AI — Sovereign AI for the public sector",
-		description:
-			"Sovereign AI for governments, hospitals and education. Built by us, run on your infrastructure, reaching every citizen.",
 	},
 };
 
