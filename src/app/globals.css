@@ -381,7 +381,7 @@ em {
   padding: 40px 38px;
   background:
     linear-gradient(to bottom, rgba(8,14,24,.74) 0%, rgba(8,14,24,.44) 34%, rgba(8,14,24,.2) 62%, rgba(8,14,24,.34) 100%),
-    url("/media/ohai-workspace.jpg") center 50% / cover no-repeat;
+    url("/media/card-research.jpg") center 55% / cover no-repeat;
 }
 
 .card__title {

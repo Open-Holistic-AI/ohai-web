@@ -39,13 +39,6 @@ const TEASERS = [
 	},
 ];
 
-const STATS = [
-	{ num: "1.5 M+", label: "messages on WhatsApp in the first month — Nalam AI", cls: "stat--teal" },
-	{ num: "90 min", label: "saved per doctor, every day — Ambient Listening", cls: "" },
-	{ num: "100%", label: "of the DIPR process digitised, end to end", cls: "stat--lav" },
-	{ num: "22", label: "districts live across government hospitals", cls: "stat--paper" },
-];
-
 export function Home() {
 	return (
 		<div className="ohai">
@@ -80,20 +73,47 @@ export function Home() {
 				</div>
 			</section>
 
-			{/* PROOF STATS */}
-			<section className="sec sec--tight">
+			{/* PROOF — bento grid */}
+			<section className="bento-wrap" id="government">
 				<div className="shell">
 					<p className="strip__label" style={{ marginBottom: 30 }}>
 						Already serving the Government of Tamil Nadu — backed by IIT Madras
 						&amp; Intel
 					</p>
-					<div className="stats">
-						{STATS.map((s) => (
-							<div className={`stat ${s.cls} reveal`} key={s.label}>
-								<div className="stat__num">{s.num}</div>
-								<div className="stat__label">{s.label}</div>
-							</div>
-						))}
+					<div className="bento">
+						<article className="card card--hero reveal">
+							<h2 className="card__title">
+								Already serving the <em>Government of Tamil Nadu.</em>
+							</h2>
+							<Link className="card__link" href="/government">
+								See the deployments
+								<ArrowMark />
+							</Link>
+						</article>
+
+						<article className="card card--wide card--image reveal">
+							<div className="card__stat">1.5&nbsp;M+</div>
+							<p className="card__sub">
+								Messages handled on WhatsApp in the first month — Nalam AI,
+								hospital appointments, prescriptions and reports without a queue.
+							</p>
+						</article>
+
+						<article className="card card--teal reveal">
+							<div className="card__stat">100%</div>
+							<p className="card__sub">
+								Of the process digitised, end to end — DIPR, Government of Tamil
+								Nadu, with every file traceable from open to close.
+							</p>
+						</article>
+
+						<article className="card card--ink reveal">
+							<div className="card__stat">90&nbsp;min</div>
+							<p className="card__sub">
+								Saved per doctor, every day — Ambient Listening writes the
+								clinical record while the doctor treats.
+							</p>
+						</article>
 					</div>
 				</div>
 			</section>
