@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+
+import { MockShield } from "@/components/illustrations";
 import Link from "next/link";
 
 import { CtaBand, FeatureGrid, PageHero } from "@/components/bits";
@@ -117,7 +119,8 @@ export default function EducationPage() {
 								<li>DPDP Act 2023 compliant, with full admin control and audit.</li>
 							</ul>
 						</div>
-						<div className="split__media reveal">
+						<div className="split__media split__media--mock reveal">
+							<MockShield />
 							<div className="split__badge">On your infrastructure</div>
 						</div>
 					</div>

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+
+import { MockFiles } from "@/components/illustrations";
 import Link from "next/link";
 
 import { CtaBand, FeatureGrid, PageHero } from "@/components/bits";
@@ -79,7 +81,8 @@ export default function DiprPage() {
 								complete record at the end.
 							</p>
 						</div>
-						<div className="split__media reveal">
+						<div className="split__media split__media--mock reveal">
+							<MockFiles />
 							<div className="split__badge">DIPR · Govt. of Tamil Nadu</div>
 						</div>
 					</div>

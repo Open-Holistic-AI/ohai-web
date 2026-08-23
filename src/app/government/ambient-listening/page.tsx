@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+
+import { MockWaveform } from "@/components/illustrations";
 import Link from "next/link";
 
 import { CtaBand, FeatureGrid, PageHero } from "@/components/bits";
@@ -80,7 +82,8 @@ export default function AmbientListeningPage() {
 								clinician time is scarce.
 							</p>
 						</div>
-						<div className="split__media reveal">
+						<div className="split__media split__media--mock reveal">
+							<MockWaveform />
 							<div className="split__badge">Rajiv Gandhi GGH, Chennai</div>
 						</div>
 					</div>

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+
+import { MockStack } from "@/components/illustrations";
 import Link from "next/link";
 
 import { CtaBand, FeatureGrid, PageHero } from "@/components/bits";
@@ -177,7 +179,8 @@ export default function TechnologyPage() {
 								or a field visit, not the clean sentences of a demo.
 							</p>
 						</div>
-						<div className="split__media reveal">
+						<div className="split__media split__media--mock reveal">
+							<MockStack />
 							<div className="split__badge">20+ Indian languages, natively</div>
 						</div>
 					</div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { CtaBand, FeatureGrid, PageHero } from "@/components/bits";
+import { MockChat } from "@/components/illustrations";
 
 export const metadata: Metadata = {
 	title: "Nalam AI — Hospital access on WhatsApp",
@@ -78,7 +79,8 @@ export default function NalamPage() {
 								The entire outpatient journey, on a phone they already own.
 							</p>
 						</div>
-						<div className="split__media reveal">
+						<div className="split__media split__media--mock reveal">
+							<MockChat />
 							<div className="split__badge">Live across 22 districts</div>
 						</div>
 					</div>

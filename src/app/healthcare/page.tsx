@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { CtaBand, FeatureGrid, PageHero } from "@/components/bits";
+import { MockChat, MockWaveform } from "@/components/illustrations";
 
 export const metadata: Metadata = {
 	title: "OHM — Sovereign clinical AI",
@@ -121,7 +122,8 @@ export default function HealthcarePage() {
 								<li>The doctor always decides — every field is editable.</li>
 							</ul>
 						</div>
-						<div className="split__media reveal">
+						<div className="split__media split__media--mock reveal">
+							<MockWaveform />
 							<div className="split__badge">90 min saved per doctor, daily</div>
 						</div>
 					</div>
@@ -132,7 +134,8 @@ export default function HealthcarePage() {
 			<section className="sec">
 				<div className="shell">
 					<div className="split split--flip">
-						<div className="split__media reveal">
+						<div className="split__media split__media--mock reveal">
+							<MockChat />
 							<div className="split__badge">1.5 M+ messages · month one</div>
 						</div>
 						<div className="reveal">
