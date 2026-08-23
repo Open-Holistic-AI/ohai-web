@@ -8,34 +8,34 @@ import { CtaBand, FeatureGrid, PageHero } from "@/components/bits";
 export const metadata: Metadata = {
 	title: "DIPR Digitalisation — Paperless departments, every file traceable",
 	description:
-		"Day-to-day paperwork digitised end to end for the Department of Information and Public Relations (DIPR), Government of Tamil Nadu — no parallel paper trail, every file traceable, full audit trail.",
+		"Paperwork digitised end to end for DIPR, Government of Tamil Nadu — every file traceable.",
 	alternates: { canonical: "/government/dipr" },
 };
 
 const FEATURES = [
 	{
 		title: "Day-to-day paperwork digitised",
-		desc: "Every routine file moves through the system, so there is no parallel paper trail running alongside it.",
+		desc: "Every file moves through the system. No parallel paper trail.",
 	},
 	{
 		title: "Every file traceable",
-		desc: "From the moment a file is raised to the moment it is closed, its whole journey is on record.",
+		desc: "From raised to closed, the whole journey is on record.",
 	},
 	{
 		title: "Faster, simpler workflows",
-		desc: "Department workflows are made faster and simpler for the staff who run them day to day.",
+		desc: "Less friction for the staff who run them daily.",
 	},
 	{
 		title: "Full audit trail",
-		desc: "Every action is logged — who did what, and when — so nothing happens off the record.",
+		desc: "Every action logged — who did what, and when.",
 	},
 	{
 		title: "A working template",
-		desc: "A proven pattern for any department that still runs on paper, ready to be extended.",
+		desc: "A proven pattern for any department on paper.",
 	},
 	{
 		title: "Government infrastructure",
-		desc: "Runs on government infrastructure and is compliant with the DPDP Act, 2023.",
+		desc: "Runs on government infrastructure, compliant with the DPDP Act, 2023.",
 	},
 ];
 
@@ -56,7 +56,7 @@ export default function DiprPage() {
 						<em>every file traceable.</em>
 					</>
 				}
-				lede="Signed with the Department of Information and Public Relations (DIPR), Government of Tamil Nadu — day-to-day paperwork digitised end to end, with no parallel paper trail left behind."
+				lede="Signed with the Department of Information and Public Relations (DIPR), Government of Tamil Nadu — paperwork digitised end to end."
 				actions={[
 					{ label: "Talk to our team", href: "/contact", primary: true },
 					{ label: "See more projects", href: "/government" },
@@ -71,14 +71,12 @@ export default function DiprPage() {
 							<span className="kicker">The result</span>
 							<h2>100% of the process digitised, end to end.</h2>
 							<p>
-								Nothing runs on paper on the side. The whole file journey lives in
-								one system, so there is no parallel paper trail to reconcile and
-								no record that quietly goes missing.
+								The whole file journey lives in one system — no parallel paper
+								trail to reconcile, no record that quietly goes missing.
 							</p>
 							<p>
-								Department workflows are made faster and simpler for the staff who
-								actually run them — the same work, with less friction and a
-								complete record at the end.
+								Workflows are faster and simpler for the staff who run them — the
+								same work, with less friction and a complete record.
 							</p>
 						</div>
 						<div className="split__media split__media--mock reveal">
@@ -117,8 +115,8 @@ export default function DiprPage() {
 							<div>
 								<h3>Intake digitised</h3>
 								<p>
-									The file is captured digitally at the point it is raised — no
-									paper original to chase later.
+									The file is captured digitally when raised — no paper original to
+									chase later.
 								</p>
 							</div>
 						</div>
@@ -127,8 +125,8 @@ export default function DiprPage() {
 							<div>
 								<h3>Routed automatically</h3>
 								<p>
-									It moves to the right desk on its own, so files don&apos;t sit
-									waiting to be hand-carried across the department.
+									It moves to the right desk on its own — no waiting to be
+									hand-carried across the department.
 								</p>
 							</div>
 						</div>
@@ -136,10 +134,7 @@ export default function DiprPage() {
 							<span className="step__n">03</span>
 							<div>
 								<h3>Tracked at every stage</h3>
-								<p>
-									Progress is visible to the department at each step, so anyone
-									can see exactly where a file stands.
-								</p>
+								<p>Progress is visible at each step, so anyone can see where a file stands.</p>
 							</div>
 						</div>
 						<div className="step reveal">
@@ -147,8 +142,8 @@ export default function DiprPage() {
 							<div>
 								<h3>Closed with a clean record</h3>
 								<p>
-									The file is closed with a complete, auditable record of
-									everything that happened along the way.
+									The file closes with a complete, auditable record of everything
+									that happened.
 								</p>
 							</div>
 						</div>
@@ -164,15 +159,12 @@ export default function DiprPage() {
 						<h2 className="sec__title">A template for any department.</h2>
 					</div>
 					<p className="mission__body">
-						The DIPR deployment is not a one-off. The same pattern — digital
-						intake, automatic routing, stage-by-stage tracking and an auditable
-						close — maps onto any department that still runs on paper, whatever
-						the file happens to be.
+						The same pattern — digital intake, automatic routing, tracking and
+						an auditable close — maps onto any department on paper.
 					</p>
 					<p className="mission__body">
 						Because it runs on government infrastructure and is DPDP Act, 2023
-						compliant, extending it is a matter of shaping the workflow to how a
-						department already works — not rebuilding from scratch.
+						compliant, extending it means shaping the workflow, not rebuilding.
 					</p>
 					<Link href="/contact" className="btn btn--outline">
 						Extend it to your department
@@ -182,7 +174,7 @@ export default function DiprPage() {
 
 			<CtaBand
 				title="Digitise any department that still runs on paper."
-				text="The DIPR template is live and proven. We'll show you how the same pattern extends across your department — every file traceable, every action on record."
+				text="The DIPR template is proven. See how the same pattern extends across your department."
 			/>
 		</>
 	);

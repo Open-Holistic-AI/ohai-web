@@ -6,34 +6,34 @@ import { MockChat } from "@/components/illustrations";
 export const metadata: Metadata = {
 	title: "Nalam AI — Hospital access on WhatsApp",
 	description:
-		"Nalam AI puts the whole outpatient journey on WhatsApp — appointments, prescriptions and reports with no counter, token or queue. Live across 22 districts of Tamil Nadu.",
+		"Nalam AI puts the whole outpatient journey on WhatsApp. Live across 22 districts of Tamil Nadu.",
 	alternates: { canonical: "/government/nalam-ai" },
 };
 
 const FEATURES = [
 	{
 		title: "Appointments on WhatsApp",
-		desc: "Booked from the phone the citizen already owns — no counter, no token, no queue.",
+		desc: "Booked from the phone they already own. No queue.",
 	},
 	{
 		title: "Prescriptions to the phone",
-		desc: "The prescription is delivered to the patient's WhatsApp — nothing to collect in person.",
+		desc: "Delivered to the patient's WhatsApp. Nothing to collect.",
 	},
 	{
 		title: "Lab & scan reports delivered",
-		desc: "Reports arrive on WhatsApp, so there's no second trip to the hospital.",
+		desc: "Reports arrive on WhatsApp. No second trip.",
 	},
 	{
 		title: "e-Visit",
-		desc: "A consultation without travelling to the hospital at all.",
+		desc: "A consultation without travelling to the hospital.",
 	},
 	{
 		title: "Geo-fencing",
-		desc: "Each citizen is mapped to their nearest government facility automatically.",
+		desc: "Each citizen mapped to their nearest facility.",
 	},
 	{
 		title: "e-Seva assistance",
-		desc: "e-Seva centres help anyone who doesn't have a smartphone — no one is left out.",
+		desc: "e-Seva centres help anyone without a smartphone.",
 	},
 ];
 
@@ -54,7 +54,7 @@ export default function NalamPage() {
 						in the <em>patient&apos;s pocket.</em>
 					</>
 				}
-				lede="Hospital appointments on WhatsApp — no queue, no counter, no app. Launched at Rajiv Gandhi Government General Hospital, Chennai, and now live across 22 districts."
+				lede="Launched at Rajiv Gandhi Government General Hospital, Chennai — now live across 22 districts."
 				actions={[
 					{ label: "Talk to our team", href: "/contact", primary: true },
 					{ label: "See more projects", href: "/government" },
@@ -69,14 +69,13 @@ export default function NalamPage() {
 							<span className="kicker">The result</span>
 							<h2>1.5 M+ messages in the first month.</h2>
 							<p>
-								Citizens took to it immediately. Instead of standing in line at a
-								government hospital, they booked appointments, received
-								prescriptions and collected reports on WhatsApp — the app already
-								on their phone, in their own language.
+								Citizens took to it immediately — booking appointments, receiving
+								prescriptions and collecting reports on WhatsApp, in their own
+								language.
 							</p>
 							<p>
-								No new app to download. No account to create. No counter to find.
-								The entire outpatient journey, on a phone they already own.
+								No new app, no account, no counter. The entire outpatient journey,
+								on a phone they already own.
 							</p>
 						</div>
 						<div className="split__media split__media--mock reveal">
@@ -110,10 +109,7 @@ export default function NalamPage() {
 							<span className="step__n">01</span>
 							<div>
 								<h3>The citizen messages the number</h3>
-								<p>
-									A simple WhatsApp message starts the flow — in Tamil or English,
-									the way they actually speak.
-								</p>
+								<p>A WhatsApp message starts the flow — in Tamil or English.</p>
 							</div>
 						</div>
 						<div className="step reveal">
@@ -121,8 +117,8 @@ export default function NalamPage() {
 							<div>
 								<h3>Booked at the nearest facility</h3>
 								<p>
-									Geo-fencing maps the citizen to their closest government
-									hospital and books the appointment — no counter, no token.
+									Geo-fencing maps the citizen to their closest hospital and books
+									the appointment.
 								</p>
 							</div>
 						</div>
@@ -130,10 +126,7 @@ export default function NalamPage() {
 							<span className="step__n">03</span>
 							<div>
 								<h3>Everything comes back to the phone</h3>
-								<p>
-									Prescriptions and lab or scan reports are delivered on WhatsApp
-									— no second trip to the hospital.
-								</p>
+								<p>Prescriptions and reports are delivered on WhatsApp.</p>
 							</div>
 						</div>
 						<div className="step reveal">
@@ -141,7 +134,7 @@ export default function NalamPage() {
 							<div>
 								<h3>No one is left out</h3>
 								<p>
-									e-Seva centres assist citizens without a smartphone, and e-Visit
+									e-Seva centres assist citizens without a smartphone; e-Visit
 									enables consultations without travel.
 								</p>
 							</div>
@@ -152,7 +145,7 @@ export default function NalamPage() {
 
 			<CtaBand
 				title="Put your government hospitals in every citizen's pocket."
-				text="Nalam AI is live and proven across 22 districts. We'll show you how it maps to your health system."
+				text="Nalam AI is proven across 22 districts. See how it maps to your health system."
 			/>
 		</>
 	);

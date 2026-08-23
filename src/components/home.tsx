@@ -39,9 +39,8 @@ export function Home() {
 						<em>every citizen.</em>
 					</h1>
 					<p className="lede">
-						We build India&apos;s own AI models — then deploy, host and operate
-						them end-to-end on your infrastructure. Not software you manage. An
-						outcome we run for you.
+						India&apos;s own AI, run on your infrastructure. We build and operate
+						the outcome — you don&apos;t manage software.
 					</p>
 					<div className="cta">
 						<Link href="/government" className="btn btn--dark btn--lg">
@@ -87,24 +86,18 @@ export function Home() {
 					<span className="kicker">Our thesis</span>
 					<div className="mission__grid">
 						<p className="mission__lead reveal">
-							Government services should meet citizens where they already are —
-							not in a queue, not in a form, not in another app to download.
+							Meet citizens where they already are — not in a queue, a form, or
+							another app.
 						</p>
 						<div className="mission__body reveal">
 							<p>
-								Most AI vendors ship a tool and hand you a manual. We do the
-								opposite. Open Holistic AI is a forward-deployed engineering
-								company for the public sector: we build the models, run them on
-								your own infrastructure, integrate with the systems your teams
-								already use, and stay on to operate and support the outcome.
+								We&apos;re a forward-deployed AI company. We build the models, run
+								them on your infrastructure, and operate the result — you get a
+								service, not a project.
 							</p>
 							<p>
-								The intelligence is our own — post-trained language and
-								vision-language models built in-house, not a foreign API resold
-								with a markup. It runs on hardware you control, so your data never
-								leaves your walls. And it is proven at government scale today, live
-								inside the Government of Tamil Nadu across health, administration
-								and education.
+								The models are our own, built in India. Your data never leaves
+								your control. Proven today across the Government of Tamil Nadu.
 							</p>
 						</div>
 					</div>
@@ -128,24 +121,21 @@ export function Home() {
 						<article className="card card--wide card--image reveal">
 							<div className="card__stat">1.5&nbsp;M+</div>
 							<p className="card__sub">
-								Messages handled on WhatsApp in the first month — Nalam AI,
-								hospital appointments, prescriptions and reports without a queue.
+								Messages on WhatsApp in month one — Nalam AI.
 							</p>
 						</article>
 
 						<article className="card card--teal reveal">
 							<div className="card__stat">100%</div>
 							<p className="card__sub">
-								Of the process digitised, end to end — DIPR, Government of Tamil
-								Nadu, with every file traceable from open to close.
+								The DIPR department process, digitised end to end.
 							</p>
 						</article>
 
 						<article className="card card--ink reveal">
 							<div className="card__stat">90&nbsp;min</div>
 							<p className="card__sub">
-								Saved per doctor, every day — Ambient Listening writes the
-								clinical record while the doctor treats.
+								Saved per doctor, daily — Ambient Listening.
 							</p>
 						</article>
 					</div>
@@ -172,23 +162,17 @@ export function Home() {
 						</div>
 						<div className="principle__items">
 							<div className="item reveal">
-								<h3>Nalam AI — the hospital in the patient&apos;s pocket</h3>
+								<h3>Nalam AI — the hospital in your pocket</h3>
 								<p>
-									Appointments booked on WhatsApp with no counter, token or queue.
-									Prescriptions and lab reports delivered to the phone. e-Visits
-									without travelling, geo-fencing to the nearest facility, and
-									e-Seva assistance for anyone without a smartphone — live across
-									22 districts.
+									Appointments, prescriptions and reports on WhatsApp — no counter,
+									no queue. Live in 22 districts.
 								</p>
 							</div>
 							<div className="item reveal">
-								<h3>DIPR digitalisation — a template for any department</h3>
+								<h3>DIPR — a template for any department</h3>
 								<p>
-									For the Department of Information and Public Relations,
-									Government of Tamil Nadu, day-to-day paperwork is fully
-									digitised, end to end. Every file is traceable from the moment
-									it is raised to the moment it is closed — no parallel paper trail
-									left behind.
+									Department paperwork digitised end to end. Every file traceable,
+									no paper trail left behind.
 								</p>
 							</div>
 						</div>
@@ -213,29 +197,22 @@ export function Home() {
 							<div className="item reveal">
 								<h3>Ambient documentation</h3>
 								<p>
-									The doctor speaks naturally — in Tamil, English or code-mixed
-									speech — and OHM writes a complete, structured medical record
-									before the patient leaves the room. Accurate in crowded
-									outpatient wards, through background noise and cross-talk, in 20+
-									Indian languages.
+									The doctor speaks; OHM writes a structured record before the
+									patient leaves — 20+ Indian languages.
 								</p>
 							</div>
 							<div className="item reveal">
 								<h3>Patient access &amp; clinical intelligence</h3>
 								<p>
-									Appointments, prescriptions and reports reach the patient on
-									WhatsApp. At the point of care, OHM surfaces guideline-aligned
-									insights — red-flag detection, screening prompts, coding support
-									— always advisory, always clinician-facing. The doctor stays the
-									decider.
+									Reports on WhatsApp, plus advisory guideline insights at the
+									point of care. The doctor decides.
 								</p>
 							</div>
 							<div className="item reveal">
 								<h3>Run on hospital infrastructure</h3>
 								<p>
-									Patient data never leaves the hospital. The AI layer stores no
-									transcripts and no patient identifiers, and every action is
-									audited. HL7 FHIR R4, ABDM-aligned and DPDP Act 2023 compliant.
+									Patient data never leaves the hospital. Audited, HL7 FHIR R4,
+									ABDM and DPDP compliant.
 								</p>
 							</div>
 						</div>
@@ -258,30 +235,23 @@ export function Home() {
 						</div>
 						<div className="principle__items">
 							<div className="item reveal">
-								<h3>Governed AI across web, terminal and desktop</h3>
+								<h3>Governed AI, everywhere</h3>
 								<p>
-									The OHAI Platform gives your whole organisation one AI workspace
-									— multi-model chat, live artifacts, documents and tools on the
-									web; an agentic coding assistant in the terminal; and a native
-									desktop app. Sign in once; the same models and history follow you
-									everywhere.
+									One AI workspace across web, terminal and desktop. Sign in once.
 								</p>
 							</div>
 							<div className="item reveal">
-								<h3>Managed, measured and under your control</h3>
+								<h3>Managed and measured</h3>
 								<p>
-									A curated set of high-quality models with no key management for
-									end users, clear per-user usage, and a dedicated admin console
-									for managing users, models and limits — replacing a sprawl of
-									individual AI subscriptions with one governed platform.
+									Curated models, per-user usage, one admin console — no
+									subscription sprawl.
 								</p>
 							</div>
 							<div className="item reveal">
 								<h3>Sovereign by option</h3>
 								<p>
-									Deployable on your own infrastructure so your data stays under
-									your control — the same engineering foundation, backed by IIT
-									Madras and Intel, that powers our government deployments.
+									Deploy on your own infrastructure. Backed by IIT Madras and
+									Intel.
 								</p>
 							</div>
 						</div>
@@ -300,10 +270,9 @@ export function Home() {
 							</h2>
 						</div>
 						<p className="connect__copy">
-							The whole stack — dataset, model and silicon — runs on government or
-							hospital infrastructure you own. The AI layer retains no citizen
-							data, every action is audited, and the models are our own IP, built
-							in India. Backed by IIT Madras and Intel. DPDP Act 2023 compliant.
+							Dataset, model and silicon run on infrastructure you own. No citizen
+							data retained, fully audited, DPDP compliant. Backed by IIT Madras
+							and Intel.
 						</p>
 						<Link className="btn btn--light btn--lg" href="/technology">
 							Our approach
@@ -344,9 +313,8 @@ export function Home() {
 						Bring sovereign AI to your <em>organisation.</em>
 					</h2>
 					<p className="join__copy">
-						Whether you run a government department, a hospital or a campus,
-						we&apos;ll show you exactly what&apos;s already live in Tamil Nadu —
-						and how the same sovereign AI layer maps to you.
+						Government, hospital or campus — see what&apos;s live in Tamil Nadu,
+						and how it maps to you.
 					</p>
 					<div className="cta">
 						<Link href="/contact" className="btn btn--dark btn--lg">

@@ -7,46 +7,46 @@ import { MockChat, MockWaveform } from "@/components/illustrations";
 export const metadata: Metadata = {
 	title: "OHM — Sovereign clinical AI",
 	description:
-		"OHM is Open Holistic AI's clinical platform: ambient documentation that lets doctors treat instead of type, patient access on WhatsApp, and advisory clinical intelligence — all on your hospital's own infrastructure.",
+		"OHM: ambient documentation, WhatsApp patient access and advisory clinical intelligence on your infrastructure.",
 	alternates: { canonical: "/healthcare" },
 };
 
 const PLATFORM = [
 	{
 		title: "Doctor App",
-		desc: "The clinical workspace — patient records, voice-driven visit notes, prescriptions, referrals and timelines.",
+		desc: "Records, voice notes, prescriptions, referrals and timelines.",
 	},
 	{
 		title: "Ambient recording & extraction",
-		desc: "Record naturally in 20+ Indian languages; get a structured clinical record, not just a transcript.",
+		desc: "20+ Indian languages into a structured record.",
 	},
 	{
 		title: "24+ clinical templates",
-		desc: "SOAP, OPD prescription, discharge, ICU daily, psychiatry, cardiology, pediatrics, emergency, MLC and more — customisable per hospital.",
+		desc: "SOAP, discharge, ICU, specialty and MLC, per hospital.",
 	},
 	{
 		title: "AI Insights panel",
-		desc: "Advisory, guideline-aligned decision support alongside every note — never inside the signed record.",
+		desc: "Advisory support beside every note, never inside it.",
 	},
 	{
 		title: "Hospital Admin Console",
-		desc: "Doctors, roles, usage, branding, templates, drug formulary and a full audit log.",
+		desc: "Roles, usage, branding, formulary and audit log.",
 	},
 	{
 		title: "Studio & SDKs",
-		desc: "Build custom clinical extraction APIs and integrate OHM into your own apps — web, Node, React Native.",
+		desc: "Custom extraction APIs for web, Node, React Native.",
 	},
 	{
 		title: "Coder Tools",
-		desc: "AI-assisted ICD-10 / SNOMED / LOINC coding and cross-mapping for records teams.",
+		desc: "ICD-10 / SNOMED / LOINC coding and mapping.",
 	},
 	{
 		title: "Patient access on WhatsApp",
-		desc: "Appointments, prescriptions and reports delivered to the phone the patient already owns.",
+		desc: "Appointments, prescriptions and reports on the patient's phone.",
 	},
 	{
 		title: "Runs on your infrastructure",
-		desc: "On-premise or sovereign cloud — patient data never leaves the hospital's control.",
+		desc: "On-premise or sovereign cloud; data stays put.",
 	},
 ];
 
@@ -67,7 +67,7 @@ export default function HealthcarePage() {
 						intelligence for <em>India.</em>
 					</>
 				}
-				lede="Doctors treat. The record writes itself. Patients get appointments, prescriptions and reports on the phone in their pocket. All on your hospital's own infrastructure, with zero patient data leaving your control."
+				lede="Doctors treat while the record writes itself, on your hospital's own infrastructure."
 				actions={[
 					{ label: "Book a hospital demo", href: "/contact", primary: true },
 					{ label: "For doctors — ohm.doctor", href: "https://ohm.doctor" },
@@ -79,22 +79,16 @@ export default function HealthcarePage() {
 				<div className="shell">
 					<div className="mission__grid">
 						<p className="mission__lead reveal">
-							Doctors spend more time typing than treating. OHM removes the
-							paperwork from the consultation.
+							OHM removes the paperwork from the consultation.
 						</p>
 						<div className="mission__body reveal">
 							<p>
-								In a busy government or private outpatient ward, the record is the
-								bottleneck. Notes get written after hours, or not at all. Patients
-								travel twice — once to consult, again to collect a report. Coding,
-								formulary checks and follow-ups fall through the cracks.
+								In a busy outpatient ward the record is the bottleneck, and
+								patients travel twice for a single report.
 							</p>
 							<p>
-								OHM puts the hospital in the patient&apos;s pocket and gives the
-								clinician their attention back — without asking anyone to change
-								how they work. It is trusted, compliant and standards-based:
-								HL7&nbsp;FHIR&nbsp;R4, ABDM-aligned, NHA terminology and DPDP Act
-								2023 compliant.
+								OHM gives clinicians their attention back — standards-based on
+								HL7&nbsp;FHIR&nbsp;R4, ABDM, NHA terminology and DPDP Act 2023.
 							</p>
 						</div>
 					</div>
@@ -109,17 +103,15 @@ export default function HealthcarePage() {
 							<span className="kicker">Ambient documentation</span>
 							<h2>The doctor speaks. OHM writes the note.</h2>
 							<p>
-								A doctor records the consultation naturally — in Tamil, English
-								or code-mixed speech. OHM transcribes it, understands it
-								clinically, and produces a complete, structured medical record
+								The doctor speaks naturally; OHM produces a structured record
 								before the patient leaves the room.
 							</p>
 							<ul>
-								<li>Hands-free records — no typing during the consultation.</li>
-								<li>Accurate in real ward conditions — noise, cross-talk, multiple speakers.</li>
-								<li>20+ Indian languages, returned in clean clinical English.</li>
-								<li>Structured fields — diagnoses, medications, allergies, investigations, vitals.</li>
-								<li>The doctor always decides — every field is editable.</li>
+								<li>Hands-free records, no typing.</li>
+								<li>Accurate in noisy ward conditions.</li>
+								<li>20+ Indian languages, clean clinical English.</li>
+								<li>Structured diagnoses, medications, vitals.</li>
+								<li>The doctor decides; every field editable.</li>
 							</ul>
 						</div>
 						<div className="split__media split__media--mock reveal">
@@ -142,14 +134,13 @@ export default function HealthcarePage() {
 							<span className="kicker">Patient access · Nalam AI</span>
 							<h2>The whole hospital journey, on WhatsApp.</h2>
 							<p>
-								Patient-facing access is built in. Appointments, prescriptions and
-								reports reach the patient on the app already on their phone — no
-								counter, no token, no queue.
+								Appointments, prescriptions and reports reach the patient on the
+								app already on their phone.
 							</p>
 							<ul>
 								<li>Appointments booked on WhatsApp.</li>
-								<li>Prescriptions and lab/scan reports delivered to the phone.</li>
-								<li>e-Visit — consult without travelling; geo-fencing to the nearest facility.</li>
+								<li>Prescriptions and reports delivered.</li>
+								<li>e-Visit — consult without travelling.</li>
 							</ul>
 							<Link
 								href="/government/nalam-ai"
@@ -172,36 +163,35 @@ export default function HealthcarePage() {
 							Advisory intelligence, always clinician-facing.
 						</h2>
 						<p className="sec__intro">
-							OHM surfaces patient-specific, guideline-aligned insights alongside
-							the note — never inside it, never directive. The doctor stays the
-							decider.
+							OHM surfaces guideline-aligned insights beside the note. The doctor
+							decides.
 						</p>
 					</div>
 					<FeatureGrid
 						items={[
 							{
 								title: "Red-flag & risk detection",
-								desc: "Escalation prompts, safety-netting and critical alerts at the point of care.",
+								desc: "Escalation prompts and critical alerts at the point of care.",
 							},
 							{
 								title: "Guideline-gap & screening prompts",
-								desc: "Tuned to Indian national programmes — NTEP TB, immunisation, diabetes and hypertension care, antenatal and more.",
+								desc: "Tuned to Indian national programmes — TB, immunisation, diabetes.",
 							},
 							{
 								title: "Specialty-aware",
-								desc: "Psychiatry, cardiology, pediatrics, emergency, OB-GYN, dermatology, ENT, orthopedics, ophthalmology, surgery and general practice.",
+								desc: "Psychiatry, cardiology, pediatrics, emergency and more.",
 							},
 							{
 								title: "Medical coding support",
-								desc: "ICD-10, SNOMED CT and LOINC candidates with rationale and confidence.",
+								desc: "ICD-10, SNOMED CT and LOINC candidates with rationale.",
 							},
 							{
 								title: "Formulary & interactions",
-								desc: "Drug formulary awareness with cost-saving substitutions.",
+								desc: "Formulary awareness with cost-saving substitutions.",
 							},
 							{
 								title: "Learns per doctor",
-								desc: "Clinician feedback calibrates the system over time — an adaptive co-pilot.",
+								desc: "Clinician feedback calibrates the system over time.",
 							},
 						]}
 					/>
@@ -217,16 +207,12 @@ export default function HealthcarePage() {
 						</p>
 						<div className="mission__body reveal">
 							<p>
-								OHM separates the clinical workspace (which runs inside the
-								hospital) from the AI engine (which holds the intelligence). The
-								design guarantees that no patient-identifying data is ever stored
-								outside the hospital&apos;s control.
+								The clinical workspace runs inside the hospital, apart from the AI
+								engine, so identifying data never leaves your control.
 							</p>
 							<p>
-								The AI layer sees only what it needs to process a request and
-								stores no transcripts or patient identifiers. Every action is
-								audited. Everything is standards-based and interoperable — clean
-								APIs over your existing EMR or HMIS, with no rip-and-replace.
+								The AI layer stores no transcripts or identifiers, and every
+								action is audited over your existing EMR or HMIS.
 							</p>
 						</div>
 					</div>
@@ -270,7 +256,7 @@ export default function HealthcarePage() {
 							<span className="step__n">03</span>
 							<div>
 								<h3>OHM Ambient Devices</h3>
-								<p>Clinic-ready edge units bringing sovereign medical AI to any consultation room.</p>
+								<p>Edge units bringing sovereign medical AI to any consultation room.</p>
 							</div>
 						</div>
 					</div>
@@ -278,8 +264,8 @@ export default function HealthcarePage() {
 			</section>
 
 			<CtaBand
-				title="Give your doctors their time back. Give patients their hospital in their pocket."
-				text="Book a demo and we'll show you OHM running in a government hospital today."
+				title="Give your doctors their time back."
+				text="Book a demo to see OHM running in a hospital today."
 				primaryLabel="Book a hospital demo"
 			/>
 		</>

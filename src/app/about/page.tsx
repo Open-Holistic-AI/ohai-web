@@ -5,41 +5,41 @@ import { CtaBand, FeatureGrid, PageHero } from "@/components/bits";
 export const metadata: Metadata = {
 	title: "About",
 	description:
-		"Open Holistic AI Solutions is a Chennai-based sovereign-AI company, backed by IIT Madras and Intel. We build India's own AI models and deploy them end-to-end inside governments, hospitals and education institutions.",
+		"Chennai-based sovereign-AI company, backed by IIT Madras and Intel. We build India's own models and deploy them end-to-end.",
 	alternates: { canonical: "/about" },
 };
 
 const DIFFERENT = [
 	{
 		title: "We own our IP",
-		desc: "Our models are built in-house — not foreign APIs resold under a new name.",
+		desc: "Models built in-house — not foreign APIs resold.",
 	},
 	{
 		title: "We run what we build",
-		desc: "You get an outcome, not a project to staff. We deploy and operate it end-to-end.",
+		desc: "You get an outcome, not a project — we operate it.",
 	},
 	{
 		title: "Sovereign by design",
-		desc: "Your data stays on your infrastructure, under your control — not ours, not anyone else's.",
+		desc: "Your data stays on your infrastructure, under your control.",
 	},
 	{
 		title: "Already proven",
-		desc: "Live inside the Government of Tamil Nadu at state scale, today — not a pilot on a slide.",
+		desc: "Live inside the Government of Tamil Nadu, at state scale.",
 	},
 ];
 
 const BACKERS = [
 	{
 		title: "IIT Madras",
-		desc: "Our research base and academic rigour. We work with institutional leadership including Prof. V. Kamakoti, Padma Shri, Director, IIT Madras.",
+		desc: "Our research base, with Prof. V. Kamakoti, Director, IIT Madras.",
 	},
 	{
 		title: "Intel",
-		desc: "Industrial-grade infrastructure to run sovereign AI reliably, at scale.",
+		desc: "Industrial-grade infrastructure to run sovereign AI at scale.",
 	},
 	{
 		title: "IITM Pravartak",
-		desc: "Our technology innovation partner; partnership agreement signed with its CEO, Dr. M. J. Shankar Raman.",
+		desc: "Innovation partner; signed with CEO Dr. M. J. Shankar Raman.",
 	},
 ];
 
@@ -83,7 +83,7 @@ export default function AboutPage() {
 						<em>public service.</em>
 					</>
 				}
-				lede="Open Holistic AI Solutions is a Chennai-based sovereign-AI company, backed by IIT Madras and Intel. We build our own models and deploy them end-to-end inside governments, hospitals and education institutions."
+				lede="A Chennai-based sovereign-AI company, backed by IIT Madras and Intel, building India's own AI."
 				actions={[
 					{ label: "Talk to our team", href: "/contact", primary: true },
 					{ label: "See what we've built", href: "/government" },
@@ -99,15 +99,12 @@ export default function AboutPage() {
 						</p>
 						<div className="mission__body">
 							<p>
-								The most important place for AI isn&apos;t a consumer app — it&apos;s
-								public service. A patient who no longer stands in a queue. A doctor
-								who treats instead of types. An officer whose files move without
-								friction.
+								The most important place for AI isn&apos;t a consumer app —
+								it&apos;s public service.
 							</p>
 							<p>
-								Our mission is to build India&apos;s own AI and run it at scale on
-								infrastructure the nation controls — so the benefits reach every
-								citizen and the data stays sovereign.
+								We build India&apos;s own AI and run it on infrastructure the
+								nation controls.
 							</p>
 						</div>
 					</div>
@@ -183,7 +180,7 @@ export default function AboutPage() {
 
 			<CtaBand
 				title="Let's build the most responsive public services in India — together."
-				text="Talk to our team about deploying sovereign AI inside your government, hospital or institution — from first conversation to live at scale."
+				text="Talk to our team about deploying sovereign AI in your government, hospital or institution."
 			/>
 		</>
 	);

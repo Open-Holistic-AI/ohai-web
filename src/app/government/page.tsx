@@ -6,7 +6,7 @@ import { ArrowMark, CtaBand, PageHero } from "@/components/bits";
 export const metadata: Metadata = {
 	title: "Government & Public Sector",
 	description:
-		"Sovereign AI for governance — Nalam AI, Ambient Listening and DIPR Digitalisation, live inside the Government of Tamil Nadu across health and administration.",
+		"Sovereign AI live inside the Government of Tamil Nadu — Nalam AI, Ambient Listening, DIPR.",
 	alternates: { canonical: "/government" },
 };
 
@@ -16,21 +16,21 @@ const PROJECTS = [
 		tag: "HEALTH · 22 DISTRICTS",
 		title: "Nalam AI",
 		stat: "1.5 M+ messages in month one",
-		desc: "Hospital appointments, prescriptions and reports on WhatsApp — no counter, no token, no queue. Live across 22 districts.",
+		desc: "Appointments, prescriptions and reports on WhatsApp. Live in 22 districts.",
 	},
 	{
 		href: "/government/ambient-listening",
 		tag: "HEALTH · NHM TAMIL NADU",
 		title: "Ambient Listening",
 		stat: "90 min saved per doctor, daily",
-		desc: "The doctor speaks; the clinical record writes itself — accurate even in crowded outpatient wards.",
+		desc: "The doctor speaks; the record writes itself.",
 	},
 	{
 		href: "/government/dipr",
 		tag: "ADMINISTRATION · GOVT. OF TN",
 		title: "DIPR Digitalisation",
 		stat: "100% process digitised",
-		desc: "Department paperwork digitised end to end, every file traceable — a working template for any department on paper.",
+		desc: "Paperwork digitised end to end, every file traceable.",
 	},
 ];
 
@@ -48,7 +48,7 @@ export default function GovernmentPage() {
 						and <em>governance.</em>
 					</>
 				}
-				lede="Sovereign AI — built by us, run on your infrastructure, reaching every citizen. Already live inside the Government of Tamil Nadu across health and administration."
+				lede="Sovereign AI, run on your infrastructure — live inside the Government of Tamil Nadu."
 				actions={[
 					{ label: "Request a briefing", href: "/contact", primary: true },
 					{ label: "See the projects", href: "#projects" },
@@ -60,21 +60,17 @@ export default function GovernmentPage() {
 				<div className="shell">
 					<div className="mission__grid">
 						<p className="mission__lead reveal">
-							Government services should meet citizens where they already are —
-							not in a queue, not in a form, not in another app to download.
+							Meet citizens where they already are — not in a queue, a form, or
+							another app.
 						</p>
 						<div className="mission__body reveal">
 							<p>
-								We are a forward-deployed engineering company for the public
-								sector. We build the models, run them on the government&apos;s own
-								infrastructure, integrate with the systems departments already
-								use, and stay on to operate and support the outcome.
+								We build the models, run them on the government&apos;s own
+								infrastructure, and stay on to operate the outcome.
 							</p>
 							<p>
-								Your department receives a working service — appointments booked,
-								records written, files moved — not a project to staff and
-								maintain. The intelligence is our own IP, built in India, and the
-								data never leaves the government&apos;s control.
+								You receive a working service, not a project. The IP is our own,
+								built in India, and data never leaves government control.
 							</p>
 						</div>
 					</div>
@@ -125,31 +121,28 @@ export default function GovernmentPage() {
 							<span className="step__n">01</span>
 							<div>
 								<h3>A bipartite MOU with IIT Madras</h3>
-								<p>Academic rigour and accountability behind every deployment.</p>
+								<p>Academic rigour behind every deployment.</p>
 							</div>
 						</div>
 						<div className="step reveal">
 							<span className="step__n">02</span>
 							<div>
 								<h3>The first AI-native citizen-service system in India</h3>
-								<p>Your government leads the country, not follows it.</p>
+								<p>Your government leads, not follows.</p>
 							</div>
 						</div>
 						<div className="step reveal">
 							<span className="step__n">03</span>
 							<div>
 								<h3>Every citizen request tracked, verified and time-bound</h3>
-								<p>Responsiveness you can measure and prove.</p>
+								<p>Responsiveness you can measure.</p>
 							</div>
 						</div>
 						<div className="step reveal">
 							<span className="step__n">04</span>
 							<div>
 								<h3>Citizens benefit directly</h3>
-								<p>
-									No queues, no office visits, no forms to fill — every fix
-									verified with proof.
-								</p>
+								<p>No queues, no office visits — every fix verified with proof.</p>
 							</div>
 						</div>
 					</div>
@@ -158,7 +151,7 @@ export default function GovernmentPage() {
 
 			<CtaBand
 				title="Make your state the most responsive government in India."
-				text="We'll walk you through what's live in Tamil Nadu today, and how the same AI layer maps to your departments."
+				text="See what's live in Tamil Nadu today, and how it maps to your departments."
 			/>
 		</>
 	);

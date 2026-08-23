@@ -6,7 +6,7 @@ import { PageHero } from "@/components/bits";
 export const metadata: Metadata = {
 	title: "Contact",
 	description:
-		"Tell us what you're trying to do — run a government programme, a hospital, a college, or partner with us — and we'll show you what's already possible with sovereign AI.",
+		"Tell us what you're trying to do; we'll show you what's possible with sovereign AI.",
 	alternates: { canonical: "/contact" },
 };
 
@@ -21,7 +21,7 @@ export default function ContactPage() {
 						Let&apos;s <em>talk.</em>
 					</>
 				}
-				lede="Whether you run a government department, a hospital, a college, or you're a partner or investor — tell us what you're trying to do, and we'll show you what's already possible."
+				lede="Tell us what you’re trying to do, and we’ll show you what’s possible."
 			/>
 
 			{/* contact form + info cards */}
@@ -82,8 +82,7 @@ export default function ContactPage() {
 								</button>
 							</form>
 							<p style={{ marginTop: 16, fontSize: 13, color: "var(--muted)" }}>
-								Prefer email? Write to info@openholisticai.in — we respond within
-								one business day.
+								Prefer email? Write to info@openholisticai.in.
 							</p>
 						</div>
 
@@ -98,15 +97,15 @@ export default function ContactPage() {
 							</div>
 							<div className="fcard">
 								<h3>State-government programmes</h3>
-								<p>Deploy sovereign AI across your departments and districts.</p>
+								<p>Deploy sovereign AI across your departments.</p>
 							</div>
 							<div className="fcard">
 								<h3>Hospital pilots</h3>
-								<p>Put your outpatient journey on WhatsApp, like Nalam AI.</p>
+								<p>Put outpatient care on WhatsApp, like Nalam AI.</p>
 							</div>
 							<div className="fcard">
 								<h3>Colleges &amp; institutions</h3>
-								<p>Bring the OHAI platform to your students and campus.</p>
+								<p>Bring the OHAI platform to your campus.</p>
 							</div>
 							<div className="fcard">
 								<h3>Response time</h3>

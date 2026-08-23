@@ -5,7 +5,7 @@ import { CtaBand, PageHero } from "@/components/bits";
 export const metadata: Metadata = {
 	title: "Newsroom",
 	description:
-		"Coverage in national and state media, and launches with government — press stories, milestones and media enquiries for Open Holistic AI.",
+		"Press coverage, milestones and media enquiries for Open Holistic AI.",
 	alternates: { canonical: "/newsroom" },
 };
 
@@ -21,8 +21,7 @@ const PRESS = [
 	{
 		outlet: "THANTHI TV",
 		headline: "Televised report on the Nalam AI launch",
-		summary:
-			"State-wide Tamil news coverage of appointments booked without queues.",
+		summary: "Tamil news coverage of appointments booked without queues.",
 		date: "Broadcast, 2026",
 	},
 ];
@@ -32,22 +31,22 @@ const MILESTONES = [
 		n: "01",
 		title:
 			"Nalam AI launched at Rajiv Gandhi Government General Hospital, Chennai",
-		desc: "The hospital-on-WhatsApp service went live at the flagship pilot site on 8 July 2026.",
+		desc: "The hospital-on-WhatsApp service went live on 8 July 2026.",
 	},
 	{
 		n: "02",
 		title: "1.5 M+ messages handled in the first month",
-		desc: "Citizen uptake was immediate, with the service live across 22 districts of Tamil Nadu.",
+		desc: "Live across 22 districts of Tamil Nadu.",
 	},
 	{
 		n: "03",
 		title: "Ambient Listening live at Rajiv Gandhi GGH",
-		desc: "90 minutes saved per doctor per day, under an MOU with the National Health Mission, Tamil Nadu.",
+		desc: "90 min saved per doctor daily, under an MOU with the National Health Mission.",
 	},
 	{
 		n: "04",
 		title: "DIPR Digitalisation",
-		desc: "Department process digitised end to end for the Department of Information and Public Relations, Government of Tamil Nadu.",
+		desc: "DIPR department process digitised end to end.",
 	},
 	{
 		n: "05",
@@ -67,7 +66,7 @@ export default function NewsroomPage() {
 						In the <em>news.</em>
 					</>
 				}
-				lede="Coverage in national and state media, and launches with government — the stories and milestones behind our work."
+				lede="The stories and milestones behind our work."
 			/>
 
 			{/* in the press */}
@@ -118,8 +117,7 @@ export default function NewsroomPage() {
 						<span className="sec__eyebrow">Media enquiries</span>
 						<h2 className="sec__title">For journalists and editors.</h2>
 						<p className="sec__intro">
-							Press kit, logos and deployment photographs are available on
-							request.
+							Press kit, logos and photographs available on request.
 						</p>
 					</div>
 					<div className="fgrid fgrid--2">
@@ -131,7 +129,7 @@ export default function NewsroomPage() {
 								<a href="mailto:info@openholisticai.in">
 									info@openholisticai.in
 								</a>{" "}
-								for interviews, briefings and assets.
+								for interviews and assets.
 							</p>
 						</div>
 						<div className="fcard reveal">

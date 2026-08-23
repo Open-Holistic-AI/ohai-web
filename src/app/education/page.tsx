@@ -8,7 +8,7 @@ import { CtaBand, FeatureGrid, PageHero } from "@/components/bits";
 export const metadata: Metadata = {
 	title: "AI for Colleges — Private, on-prem, cost-effective",
 	description:
-		"A private, on-prem AI platform for colleges that replaces ChatGPT and Claude — your data never leaves campus, flat campus-wide pricing instead of per-seat SaaS, deployed and operated for you.",
+		"Private, on-prem AI for colleges that replaces ChatGPT and Claude — flat campus pricing, data stays on campus.",
 	alternates: { canonical: "/education" },
 };
 
@@ -26,7 +26,7 @@ export default function EducationPage() {
 						<em>Your</em> servers. <em>Your</em> data.
 					</>
 				}
-				lede="A cost-effective, on-prem AI platform that replaces ChatGPT and Claude for your whole college — chat, coding, research and documents — deployed on your own infrastructure so student and faculty data never leaves campus."
+				lede="An on-prem AI platform that replaces ChatGPT and Claude, so campus data stays home."
 				actions={[
 					{ label: "Talk to us about your campus", href: "/contact", primary: true },
 					{ label: "See the cost model", href: "#cost" },
@@ -38,21 +38,17 @@ export default function EducationPage() {
 				<div className="shell">
 					<div className="mission__grid">
 						<p className="mission__lead reveal">
-							Colleges are paying per seat for foreign AI — and sending their
-							students&apos; data off-campus to do it.
+							Colleges pay per seat for foreign AI — and send student data
+							off-campus to do it.
 						</p>
 						<div className="mission__body reveal">
 							<p>
-								ChatGPT and Claude are powerful, but for an institution they carry
-								two problems. Cost scales with every student and staff licence, so
-								campus-wide access is expensive. And every prompt — coursework,
-								research, student questions — leaves your network for a third
-								party&apos;s servers.
+								ChatGPT and Claude cost more with every licence, and every prompt
+								leaves your network for a third party&apos;s servers.
 							</p>
 							<p>
-								Open Holistic AI gives you the same everyday AI capability as a
-								private platform on your own infrastructure: one flat,
-								campus-wide deployment, with the data staying inside your walls.
+								OHAI gives you the same AI as a private platform on your own
+								infrastructure — one flat deployment, data inside your walls.
 							</p>
 						</div>
 					</div>
@@ -72,27 +68,27 @@ export default function EducationPage() {
 						items={[
 							{
 								title: "AI chat & writing",
-								desc: "Multi-model chat with streaming, documents, diagrams and artifacts — for coursework, research and admin.",
+								desc: "Multi-model chat, documents, diagrams and artifacts.",
 							},
 							{
 								title: "Coding assistant",
-								desc: "An agentic coding tool in the terminal and editor for CS labs, projects and research computing.",
+								desc: "Agentic coding for CS labs, projects and research.",
 							},
 							{
 								title: "Research & documents",
-								desc: "Upload papers and material, extract and summarise, and generate Word, Excel, PDF and slides.",
+								desc: "Summarise papers and generate Word, Excel, PDF and slides.",
 							},
 							{
 								title: "Every student & staff member",
-								desc: "Campus-wide access with one sign-in — no one buying their own subscription.",
+								desc: "Campus-wide access with one sign-in.",
 							},
 							{
 								title: "Indian languages, first-class",
-								desc: "Works naturally in Indian languages, not just English.",
+								desc: "Works naturally in Indian languages.",
 							},
 							{
 								title: "Admin & usage controls",
-								desc: "A control panel for accounts, models, limits and usage across the institution.",
+								desc: "One panel for accounts, models, limits and usage.",
 							},
 						]}
 					/>
@@ -107,16 +103,14 @@ export default function EducationPage() {
 							<span className="kicker">Privacy-first · on-prem</span>
 							<h2>Your data never leaves your servers.</h2>
 							<p>
-								The platform is deployed on the college&apos;s own infrastructure.
-								Prompts, documents and student data stay inside your network —
-								nothing is sent to a third-party cloud, and nothing is used to
-								train someone else&apos;s model.
+								Deployed on the college&apos;s own infrastructure — prompts,
+								documents and student data stay inside your network.
 							</p>
 							<ul>
-								<li>Runs on your servers — on-prem or your private cloud.</li>
-								<li>No student or faculty data leaves campus.</li>
-								<li>Not used to train external models.</li>
-								<li>DPDP Act 2023 compliant, with full admin control and audit.</li>
+								<li>Runs on-prem or your private cloud.</li>
+								<li>No campus data leaves.</li>
+								<li>Never trains external models.</li>
+								<li>DPDP Act 2023 compliant, fully audited.</li>
 							</ul>
 						</div>
 						<div className="split__media split__media--mock reveal">
@@ -189,9 +183,7 @@ export default function EducationPage() {
 						<span className="sec__eyebrow">Cost model</span>
 						<h2 className="sec__title">Flat and campus-wide — not per seat.</h2>
 						<p className="sec__intro">
-							Add every student and staff member at no extra cost. One
-							deployment covers your institution, so cost doesn&apos;t balloon as
-							adoption grows.
+							Add every student and staff member at no extra cost.
 						</p>
 					</div>
 					<div className="plans">
@@ -201,7 +193,7 @@ export default function EducationPage() {
 								Pilot <span>/ one department</span>
 							</div>
 							<ul className="plan__list">
-								<li>Private AI for a single department</li>
+								<li>Private AI for one department</li>
 								<li>On-prem or private cloud</li>
 								<li>Admin console &amp; usage</li>
 								<li>Fastest way to prove value</li>
@@ -216,10 +208,10 @@ export default function EducationPage() {
 								Flat <span>/ campus / year</span>
 							</div>
 							<ul className="plan__list">
-								<li>Unlimited students &amp; staff — no per-seat billing</li>
+								<li>Unlimited students &amp; staff, no per-seat billing</li>
 								<li>Chat, coding, research &amp; documents</li>
 								<li>Deployed on your infrastructure</li>
-								<li>Indian languages, full admin &amp; audit</li>
+								<li>Indian languages, admin &amp; audit</li>
 								<li>Operated end-to-end by us</li>
 							</ul>
 							<Link href="/contact" className="btn btn--light">
@@ -232,7 +224,7 @@ export default function EducationPage() {
 								Custom <span>/ university or state</span>
 							</div>
 							<ul className="plan__list">
-								<li>Many colleges under one deployment</li>
+								<li>Many colleges, one deployment</li>
 								<li>Central administration</li>
 								<li>State education-department scale</li>
 								<li>Bespoke integration &amp; support</li>
@@ -243,8 +235,7 @@ export default function EducationPage() {
 						</div>
 					</div>
 					<p className="sec__intro" style={{ fontSize: 13.5, color: "#6a6862" }}>
-						Indicative tiers — exact scope and pricing are shaped to your
-						institution. Talk to us for a quote.
+						Indicative tiers — scope and pricing shaped to your institution.
 					</p>
 				</div>
 			</section>
@@ -256,9 +247,7 @@ export default function EducationPage() {
 						<span className="sec__eyebrow">FDE for colleges</span>
 						<h2 className="sec__title">We build, deploy and run it for you.</h2>
 						<p className="sec__intro">
-							You don&apos;t need an AI team. We are forward-deployed engineers:
-							we stand it up on your infrastructure, integrate it, and stay on to
-							operate and support it.
+							You don&apos;t need an AI team — we deploy, integrate and run it.
 						</p>
 					</div>
 					<div className="steps">
@@ -266,21 +255,21 @@ export default function EducationPage() {
 							<span className="step__n">01</span>
 							<div>
 								<h3>We deploy on your infrastructure</h3>
-								<p>On-prem or your private cloud — set up and secured by us.</p>
+								<p>On-prem or private cloud, set up and secured by us.</p>
 							</div>
 						</div>
 						<div className="step reveal">
 							<span className="step__n">02</span>
 							<div>
 								<h3>We roll it out to your campus</h3>
-								<p>Accounts, access and admin configured for students and staff.</p>
+								<p>Accounts and access configured for students and staff.</p>
 							</div>
 						</div>
 						<div className="step reveal">
 							<span className="step__n">03</span>
 							<div>
 								<h3>We operate and support it</h3>
-								<p>Monitoring, updates and support — you get a working service, not a project.</p>
+								<p>Monitoring, updates and support — a working service, not a project.</p>
 							</div>
 						</div>
 					</div>
@@ -289,7 +278,7 @@ export default function EducationPage() {
 
 			<CtaBand
 				title="Give your whole campus private AI — for less than per-seat SaaS."
-				text="Tell us about your college and we'll scope an on-prem deployment that replaces ChatGPT and Claude, cost-effectively."
+				text="Tell us about your college and we'll scope an on-prem deployment that replaces ChatGPT and Claude."
 				primaryLabel="Talk to us"
 			/>
 		</>

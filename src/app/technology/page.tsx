@@ -8,64 +8,64 @@ import { CtaBand, FeatureGrid, PageHero } from "@/components/bits";
 export const metadata: Metadata = {
 	title: "Technology",
 	description:
-		"The Sovereign Stack — we own it end to end: the Indian-language datasets our models learn on, the models themselves, and the Intel-backed infrastructure they run on. Secure, on-prem and DPDP-compliant.",
+		"The Sovereign Stack: Indian-language datasets, our own models, and Intel-backed infrastructure. Secure, on-prem, DPDP-compliant.",
 	alternates: { canonical: "/technology" },
 };
 
 const LAYERS = [
 	{
 		title: "I · Dataset — Indic corpus",
-		desc: "Trained and post-trained on Indian-language data — Tamil, English and code-mixed speech captured in real ward and field conditions, not a foreign benchmark.",
+		desc: "Trained on Tamil, English and code-mixed Indian-language speech.",
 	},
 	{
 		title: "II · Model — built in-house",
-		desc: "Post-trained language and vision-language models where the core IP is ours, not a resold foreign API. Two tiers: a high-quality complex model and a low-latency fast model.",
+		desc: "Post-trained models we own — complex and fast tiers.",
 	},
 	{
 		title: "III · Silicon — Intel-backed",
-		desc: "Industrial-grade infrastructure engineered with Intel to run reliably at government and hospital scale, day after day.",
+		desc: "Industrial-grade infrastructure engineered with Intel for government scale.",
 	},
 	{
 		title: "IV · Outcome — secure & on-prem",
-		desc: "The whole stack runs on your infrastructure. Nothing leaves your control — the AI is sovereign because every layer is.",
+		desc: "Runs entirely on your infrastructure — nothing leaves your control.",
 	},
 ];
 
 const SOVEREIGNTY = [
 	{
 		title: "Runs on your infrastructure",
-		desc: "Deployed on-prem or in a sovereign cloud you control — never a shared multi-tenant service outside your walls.",
+		desc: "Deployed on-prem or in a sovereign cloud you control.",
 	},
 	{
 		title: "Separation of concerns",
-		desc: "The workspace holding sensitive data lives on your side. The AI engine sees only what a single request needs and stores no identifiers.",
+		desc: "Sensitive data stays your side; the engine stores no identifiers.",
 	},
 	{
 		title: "Zero-retention AI layer",
-		desc: "No transcripts, no patient IDs, nothing kept. The engine answers the request and forgets it.",
+		desc: "No transcripts, no patient IDs — nothing kept.",
 	},
 	{
 		title: "Auditable & compliant",
-		desc: "A full audit trail across every request, and a posture built to be compliant with the DPDP Act, 2023.",
+		desc: "Full audit trail, built for DPDP Act, 2023 compliance.",
 	},
 ];
 
 const STANDARDS = [
 	{
 		title: "Health-data standards",
-		desc: "HL7 FHIR R4, ABDM alignment and NHA terminology — so the stack speaks the language your health system already runs on.",
+		desc: "HL7 FHIR R4, ABDM alignment and NHA terminology.",
 	},
 	{
 		title: "Clinical coding",
-		desc: "ICD-10, SNOMED CT and LOINC coding built in, keeping records structured and interoperable.",
+		desc: "ICD-10, SNOMED CT and LOINC coding built in.",
 	},
 	{
 		title: "Clean REST APIs",
-		desc: "Sits over your existing EMR, HMIS and department systems through clean REST APIs — no rip-and-replace.",
+		desc: "Sits over your EMR and HMIS through clean REST APIs.",
 	},
 	{
 		title: "SDKs, CLI & fast rollout",
-		desc: "SDKs for JavaScript/TypeScript, Node and React Native, plus a CLI — so teams go live in weeks, not years.",
+		desc: "SDKs for JavaScript/TypeScript, Node and React Native, plus a CLI.",
 	},
 ];
 
@@ -81,7 +81,7 @@ export default function TechnologyPage() {
 						Dataset. Model. Silicon. <em>Sovereignty.</em>
 					</>
 				}
-				lede="We own the full stack — from the Indian-language data our models learn on, to the models themselves, to the infrastructure they run on. That's what makes the AI sovereign and keeps your data yours."
+				lede="We own the full stack — data, models and infrastructure — so the AI is sovereign."
 				actions={[
 					{
 						label: "Request a technical briefing",
@@ -99,9 +99,8 @@ export default function TechnologyPage() {
 						<span className="sec__eyebrow">The Sovereign Stack</span>
 						<h2 className="sec__title">The four layers.</h2>
 						<p className="sec__intro">
-							Data, model, silicon and outcome — each layer owned outright,
-							so there is no foreign API in the loop and no data leaving your
-							control.
+							Data, model, silicon and outcome — each owned outright, no
+							foreign API in the loop.
 						</p>
 					</div>
 					<FeatureGrid items={LAYERS} />
@@ -113,27 +112,22 @@ export default function TechnologyPage() {
 				<div className="shell">
 					<div className="sec__head">
 						<span className="sec__eyebrow">Data sovereignty</span>
-						<h2 className="sec__title">Your data never leaves your control.</h2>
+						<h2 className="sec__title">Sovereignty by design.</h2>
 					</div>
 					<div className="mission__grid reveal">
 						<p className="mission__lead">Your data never leaves your control.</p>
 						<div className="mission__body">
 							<p>
-								The whole stack runs on your infrastructure — on-prem or in a
-								sovereign cloud you administer. Nothing is shipped to a shared
-								service somewhere else.
+								The whole stack runs on your infrastructure — on-prem or a
+								sovereign cloud you administer.
 							</p>
 							<p>
-								We design around separation of concerns. The workspace that
-								holds sensitive data lives entirely on your side. The AI engine
-								sees only what a single request needs, and stores no
-								identifiers along the way.
+								We separate concerns: the AI engine sees only what a request
+								needs and stores no identifiers.
 							</p>
 							<p>
-								The AI layer is zero-retention: no transcripts, no patient IDs,
-								nothing kept once a request is answered. Every request is
-								captured in a full audit trail, and the posture is built to be
-								compliant with the DPDP Act, 2023.
+								The AI layer is zero-retention and fully audited, built for
+								DPDP Act, 2023 compliance.
 							</p>
 						</div>
 					</div>
@@ -152,9 +146,8 @@ export default function TechnologyPage() {
 							Built to plug into what you already run.
 						</h2>
 						<p className="sec__intro">
-							Open standards and clean APIs mean the stack fits your health and
-							department systems as they are — and gets you live in weeks, not
-							years.
+							Open standards and clean APIs fit your existing systems — live in
+							weeks, not years.
 						</p>
 					</div>
 					<FeatureGrid items={STANDARDS} />
@@ -170,13 +163,11 @@ export default function TechnologyPage() {
 							<h2>Built for how India actually speaks.</h2>
 							<p>
 								The models handle 20+ Indian languages natively — Hindi, Tamil,
-								Telugu, Malayalam, Kannada, Marathi, Bengali, Gujarati, Punjabi,
-								Odia, Assamese, Urdu and more.
+								Telugu, Malayalam and more.
 							</p>
 							<p>
-								That includes code-mixed, real-world speech through background
-								noise — the way citizens and health workers talk in a busy ward
-								or a field visit, not the clean sentences of a demo.
+								Including code-mixed, real-world speech through background noise
+								— the way people actually talk.
 							</p>
 						</div>
 						<div className="split__media split__media--mock reveal">
@@ -200,9 +191,8 @@ export default function TechnologyPage() {
 							<div>
 								<h3>Forward-deployed engineering</h3>
 								<p>
-									We host, monitor, support and keep improving the system — our
-									engineers stay close to the deployment rather than handing you
-									a manual.
+									We host, monitor, support and keep improving the system —
+									engineers close to every deployment.
 								</p>
 							</div>
 						</div>
@@ -212,7 +202,7 @@ export default function TechnologyPage() {
 								<h3>Resilient by design</h3>
 								<p>
 									Graceful fallbacks, retries and health monitoring keep the
-									service dependable under real government and hospital load.
+									service dependable under real load.
 								</p>
 							</div>
 						</div>
@@ -222,7 +212,7 @@ export default function TechnologyPage() {
 								<h3>Backed by IIT Madras &amp; Intel</h3>
 								<p>
 									Research depth from IIT Madras and industrial-grade silicon
-									from Intel stand behind every deployment.
+									from Intel back every deployment.
 								</p>
 							</div>
 						</div>
@@ -231,8 +221,8 @@ export default function TechnologyPage() {
 							<div>
 								<h3>An outcome, delivered</h3>
 								<p>
-									You receive a working outcome for your citizens and clinicians
-									— not a stack of components to integrate yourself.
+									You receive a working outcome — not components to integrate
+									yourself.
 								</p>
 							</div>
 						</div>
@@ -246,7 +236,7 @@ export default function TechnologyPage() {
 
 			<CtaBand
 				title="Want the architecture deep-dive?"
-				text="We'll walk your technical and security teams through the full stack, the data-flow guarantees and the compliance posture."
+				text="We'll walk your technical and security teams through the full stack and compliance posture."
 			/>
 		</>
 	);

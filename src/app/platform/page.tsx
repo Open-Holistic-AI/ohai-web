@@ -5,7 +5,7 @@ import { CtaBand, FeatureGrid, PageHero } from "@/components/bits";
 export const metadata: Metadata = {
 	title: "OHAI Platform — Governed AI everywhere",
 	description:
-		"One platform for working with AI across web, terminal and desktop — managed models, admin controls and per-user usage. A sovereign, governed AI workspace for your whole organisation.",
+		"Governed AI across web, terminal and desktop — managed models, admin controls, per-user usage.",
 	alternates: { canonical: "/platform" },
 };
 
@@ -26,7 +26,7 @@ export default function PlatformPage() {
 						<em>everywhere</em> your people work.
 					</>
 				}
-				lede="The web. The terminal. A native desktop app. Sign in once, and use the same models, tools and history across all of them — under your organisation's control."
+				lede="Web, terminal and desktop — one sign-in, same models everywhere, under your control."
 				actions={[
 					{ label: "Get a walkthrough", href: "/contact", primary: true },
 					{ label: "Visit the app", href: "https://app.openholisticai.in" },
@@ -41,15 +41,13 @@ export default function PlatformPage() {
 							<span className="kicker">The idea</span>
 							<h2>Governed AI — not a scatter of subscriptions.</h2>
 							<p>
-								Most organisations end up with AI everywhere and control nowhere:
-								personal accounts, unmanaged keys, no visibility. OHAI is the
-								opposite — one identity, one set of managed models, one admin
-								console, and clear per-user usage across every surface.
+								Most organisations get AI everywhere and control nowhere. OHAI is
+								one identity, managed models, one console and per-user usage.
 							</p>
 							<ul>
-								<li>Sign in once; your models and history follow you.</li>
-								<li>One bill and one console — no per-person key sprawl.</li>
-								<li>Deployable on your own infrastructure.</li>
+								<li>Sign in once, models follow you.</li>
+								<li>One bill, one console.</li>
+								<li>Deploy on your own infrastructure.</li>
 							</ul>
 						</div>
 						<div className="split__media reveal" style={{ background: "none" }}>
@@ -76,15 +74,15 @@ export default function PlatformPage() {
 						items={[
 							{
 								title: "Web",
-								desc: "Multi-model chat with streaming, branching and history; live artifacts; documents in and out (PDF, Word, Excel, PPT); diagrams, charts and tools.",
+								desc: "Multi-model chat, live artifacts, documents, diagrams and tools.",
 							},
 							{
 								title: "Command line (CLI)",
-								desc: "An agentic coding assistant that reads, edits and creates files, runs commands and iterates — with plan and build modes and permission controls.",
+								desc: "Agentic coding assistant with plan, build and permission controls.",
 							},
 							{
 								title: "Desktop",
-								desc: "A native app for macOS, Windows and Linux — the full agent and chat experience, auto-updating, multi-window, offline-friendly.",
+								desc: "Native app for macOS, Windows and Linux — full agent and chat.",
 							},
 						]}
 					/>
@@ -103,19 +101,19 @@ export default function PlatformPage() {
 						items={[
 							{
 								title: "Unified identity",
-								desc: "Sign in once; the same models and history follow you across web, CLI and desktop.",
+								desc: "One sign-in across web, CLI and desktop.",
 							},
 							{
 								title: "Managed models",
-								desc: "A curated set of high-quality models, ready to use, with no key management for end users.",
+								desc: "Curated models, ready to use, no key management.",
 							},
 							{
 								title: "Usage tracking",
-								desc: "Clear, per-user usage across every surface — visible at a glance.",
+								desc: "Per-user usage across every surface.",
 							},
 							{
 								title: "Administration",
-								desc: "A dedicated control panel to manage users, models, limits and policies.",
+								desc: "One panel for users, models, limits and policies.",
 							},
 						]}
 					/>
@@ -134,7 +132,7 @@ export default function PlatformPage() {
 							<span className="step__n">01</span>
 							<div>
 								<h3>Government teams</h3>
-								<p>A sovereign, administered AI workspace on infrastructure you control.</p>
+								<p>A sovereign AI workspace on infrastructure you control.</p>
 							</div>
 						</div>
 						<div className="step reveal">
@@ -142,7 +140,7 @@ export default function PlatformPage() {
 							<div>
 								<h3>Universities &amp; colleges</h3>
 								<p>
-									A private AI platform for faculty, researchers and students —
+									Private AI for faculty, researchers and students —
 									see our <a href="/education" style={{ color: "#1e6e7e" }}>education offering</a>.
 								</p>
 							</div>
@@ -151,14 +149,14 @@ export default function PlatformPage() {
 							<span className="step__n">03</span>
 							<div>
 								<h3>Enterprises</h3>
-								<p>Replace a sprawl of individual AI subscriptions with one managed, measurable platform.</p>
+								<p>Replace scattered AI subscriptions with one managed platform.</p>
 							</div>
 						</div>
 						<div className="step reveal">
 							<span className="step__n">04</span>
 							<div>
 								<h3>Developer teams</h3>
-								<p>The agentic CLI and SDKs for building on top of managed models.</p>
+								<p>Agentic CLI and SDKs for building on managed models.</p>
 							</div>
 						</div>
 					</div>
@@ -167,7 +165,7 @@ export default function PlatformPage() {
 
 			<CtaBand
 				title="Bring governed AI to your whole organisation."
-				text="We'll walk your team through the platform, the admin console and the sovereign deployment options."
+				text="We'll walk your team through the platform, console and deployment options."
 				primaryLabel="Get a walkthrough"
 			/>
 		</>
