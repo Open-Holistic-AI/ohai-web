@@ -48,6 +48,18 @@ em {
   margin: 0 auto;
 }
 
+/* balanced, orphan-free line wrapping for headings */
+.headline,
+.join__title,
+.connect__title,
+.card__title,
+.mission__lead,
+.principle__head h2 { text-wrap: balance; }
+.lede,
+.mission__body p,
+.item p,
+.card__sub { text-wrap: pretty; }
+
 .kicker {
   display: inline-block;
   font-family: "JetBrains Mono", ui-monospace, monospace;
@@ -922,6 +934,23 @@ em {
   .connect__title { font-size: 29px; }
   .mission__lead { font-size: 23px; }
   .plogo { min-width: 116px; }
+}
+
+/* mobile readability — larger, better-spaced body copy */
+@media (max-width: 760px) {
+  .lede { font-size: 16px; line-height: 1.62; }
+  .mission { padding-top: 44px; }
+  .mission__lead { line-height: 1.28; }
+  .mission__body { gap: 16px; }
+  .mission__body p { font-size: 16.5px; line-height: 1.74; color: #3f3e39; }
+  .principle__head h2 { font-size: 27px; }
+  .principle__meta { font-size: 11.5px; }
+  .item h3 { font-size: 18px; margin-bottom: 8px; }
+  .item p { font-size: 16.5px; line-height: 1.74; color: #3f3e39; }
+  .card__sub { font-size: 15px; line-height: 1.56; opacity: 0.94; }
+  .connect__copy { font-size: 15.5px; line-height: 1.68; }
+  .join__copy { font-size: 16px; line-height: 1.64; }
+  .strip__label { line-height: 1.5; }
 }
 
 @media (prefers-reduced-motion: reduce) {

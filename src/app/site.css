@@ -394,3 +394,30 @@
   .step { grid-template-columns: 1fr; gap: 8px; }
   .compare th, .compare td { padding: 12px 14px; font-size: 13.5px; }
 }
+
+/* ─────────── balanced wrapping + mobile readability (pages) ─────────── */
+.phero__title,
+.sec__title,
+.split h2,
+.fcard h3,
+.step h3,
+.ctaband__inner h2 { text-wrap: balance; }
+.phero__lede,
+.sec__intro,
+.fcard p,
+.step p,
+.split p { text-wrap: pretty; }
+
+@media (max-width: 760px) {
+  .phero__lede { font-size: 16px; line-height: 1.62; }
+  .sec__intro { font-size: 16px; line-height: 1.68; }
+  .sec__head { margin-bottom: 26px; }
+  .fcard { padding: 24px; }
+  .fcard h3 { font-size: 17.5px; }
+  .fcard p { font-size: 15px; line-height: 1.64; }
+  .step h3 { font-size: 18px; }
+  .step p { font-size: 15.5px; line-height: 1.68; }
+  .split p { font-size: 16.5px; line-height: 1.72; }
+  .split li { font-size: 16px; line-height: 1.58; }
+  .compare th, .compare td { font-size: 14px; }
+}
